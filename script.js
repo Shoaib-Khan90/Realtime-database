@@ -13,7 +13,9 @@ Button.addEventListener("click",read)
 async function read (){
  const id = new Date();
   set(ref(db, 'Messege/' + id), {
-    author : Name.value,
-    text: Messege.value,
+    author : Name.value  ,
+    text: Messege.value  ,
   });
+  Name.value = "";
+  Messege.value = "";
 }
