@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
 
-import { getDatabase,ref,set } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-database.js";
+import { getDatabase,ref,set, onValue, child, get, push, update, runTransaction, } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-database.js";
 
 import {
   getAuth,
@@ -61,4 +61,10 @@ export {
   deleteDoc,
   ref,
   set,
+  onValue,
+  child,
+  get,
+  push,
+  update,
+  runTransaction,
 };
